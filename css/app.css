@@ -54,6 +54,10 @@ html {
 html, body {
   font-size: 100%; }
 
+.terms_privacy_text p {
+  font-weight: 100;
+}
+
 body {
   background: #fff;
   color: #333333;
@@ -5779,3 +5783,11 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+
+.feature-banner {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.headerItem {
+  color: #00f;
+}

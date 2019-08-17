@@ -63,7 +63,7 @@
   background: #fff; }
 
 .full.flower {
-  background-image: url(../images/@stock/flower.png);
+  background-image: url(../images/@stock/family_ie.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-attachment: fixed; }
@@ -77,10 +77,11 @@
 
 .full.lamp {
   min-height: 60%;
-  background-image: url(../images/@stock/lamp.png);
+  background-image: url(../images/@stock/butterflies.jpg);
   background-repeat: no-repeat;
   background-position: 80% 10%;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: cover; }
 
 .full.white-light {
   min-height: 60%;
@@ -334,6 +335,23 @@ body {
       color: #ab8860; }
 
 .title-area.white h1 a {
+  color: #fff; }
+
+  .title-area h3 {
+    line-height: 1;
+    padding-left: 15px;
+    margin-top: 35px;}
+    .title-area h3 a {
+      color: #333;
+      font-size: 24px;
+      font-family: "josefin sans";
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 10px; }
+      .title-area h3 a span {
+        color: #ab8860; }
+
+.title-area.white h3 a {
   color: #fff; }
 
 #menu-toggler {

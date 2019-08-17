@@ -1,12 +1,12 @@
 <div class='contain-to-grid sticky transparent'>
   <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
     <ul class='title-area'>
-      <li class="">
-        <h1>
+      <li class="site-title-log">
+        <h3>
           <a href='{{site.url}}/index.html'>
             <b>TIN</b><span>GR</span>
           </a>
-        </h1>
+        </h3>
       </li>
     </ul>
     <div id="menu-toggler" class="right">
@@ -37,7 +37,11 @@
             </li>
           {% else %}
             <li class="{{active_class}}">
-              <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+              {% if item.url %}
+                <a href="{{ item.url }}" style="{{ item.headerItemStyle }}">{{ item.name }}</a>
+              {% else %}
+                <a href="{{site.url}}/{{ item.path }}" style="{{ item.headerItemStyle }}">{{ item.name }}</a>
+              {% endif %}
             </li>
           {% endif %}
         {% endfor %}

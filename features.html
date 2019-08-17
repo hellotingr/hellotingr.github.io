@@ -1,0 +1,151 @@
+---
+layout: default
+section_id: pages
+services:
+- title: Enrollments
+  desc: Take your facility to internet instantly. Right from Student enrollments —to— Extended care services —to— After School programs. You name it. We’ve got your back!
+  desc2: It's quick & easy for everyone.
+  image: images/@stock/enrollments.png
+  image_position: left
+- title: Digital Forms/Docs
+  desc: Our smart tech helps you in organizing your facility documents, student records to be available at your fingertips when you need ‘em.
+  desc2: Cool part...next time, ask parents to submit forms, send documents online. They are stored securely. Readily available for you and your staff!
+  image: images/@stock/forms_documents.png
+  image_position: right
+- title: Classroom Moments
+  desc: Parents love to see kids in action. You are the first one to experience ‘em at first hand! Capture your class room in action & share whenever you want. Even a cute word that kid just said! Either with a single parent or with all parents.
+  desc2: By sharing, you are creating a sense of care, building a warmth bond with classroom parents. More than anything else an entry into child’s memory book.
+  image: images/@stock/moments.png
+  image_position: left
+- title: PARENT COMMUNICATION
+  desc: Whether you intend to communicate with an individual parent or a group of parents from your classroom, parent messaging is never been so much easier & fun.
+  desc2: We developed messaging functionality which revolves around an individual kid. Allowing any parent/caregiver to respond. At the same time, allowing any teacher from the classroom to start conversation.
+  image: images/@stock/messages.png
+  image_position: right
+- title: Student Sign in/out
+  desc: Our smart device, iSIGHT, makes Student Sign-in/out process effortless. Meets state requirements.
+  desc2: If you prefer, we also provide mobile phone based PIN solution for a peace of mind.
+  image: images/@stock/sign-in.png
+  image_position: left
+- title: Student Reports
+  desc: Bookkeeping made easy.
+  desc2: Export. Print. Share. Always in your reach.
+  image: images/@stock/reports.png
+  image_position: right
+- title: Reminders
+  desc: We all know remembering day-to-day matters is a daunting task. When it comes to classroom - even worse. Birthdays. Holidays. Special Occasions. Due Dates. Asking all parents to bring toys…aaahh!
+  desc2: Well, you don’t have to face it alone. Our smart reminders working in parallel with timely notifications are here to free you up! Highly customizable, configurable and most reliable. Take that mental time-off today!
+  image: images/@stock/reminders.png
+  image_position: left
+- title: Promote
+  desc: We help you reach right audience with right tools. Fulfilling your short-term goals to those long-term goals. From running one time promotions to on-going parent referrals. Local market reach. Improved discoverability. Digital presence. Our product suite naturally blends with your current marketing strategy.
+  desc2: Let our platform work for you. Even when you don’t. Don’t just follow your dreams, chase them.
+  image: images/@stock/promote.png
+  image_position: right
+
+principles:
+- title: ROSTER
+  desc: Up-to-date Student Records. Ready to print for legal purposes.
+  icon:  icon-basic-printer
+- title: YEARBOOK
+  desc: Make your students yearbook unforgettable & super easy to create. Parents can make their own, if they chose to.
+  icon: icon-basic-picture-multiple
+- title: Daily Food Menu
+  desc: Feed your Children a Healthy Meal. Informing parents about what's in for the day is never been easier. Setup once. Of course, update as often as you like.
+  icon: icon-basic-info
+- title: Staff Hours
+  desc: Accurately catpures time spent by your staff at the center to the minute. Even at a class level, if you prefer.
+  icon: icon-basic-calendar
+- title: Invoicing
+  desc: PCI complaint. Simple to use. Quick Student invoicing software at your disposal. Whether you are looking to collect Enrollment Fee or Monthly Invoice, it comes very handy with a nominal fee.
+  icon: icon-basic-paperplane
+- title: EVEN MORE
+  desc: ✔️Free Website<br/>✔️Holidays Scheduling<br/>✔️Professional grade Emails<br/>✔️Email Templates to save time<br/>✔️Reach a single parent or whole classroom with ease!
+  icon: icon-basic-heart
+---
+
+<div class="full centered-text grey lamp">
+  <div class="four spacing"></div>
+  <div class="feature-banner">
+    <div class="two spacing"></div>
+    <div class="section-title">
+      <div class="row">
+        <div class="medium-10 medium-centered columns">
+          <h2 class="wow slideInUp header-quote">All—in—One product to transform your Childcare right away!</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-9 medium-centered columns">
+        <div class="header-quote">
+          <p><u>Take our word for it<br/></u></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="four spacing"></div>
+  <div class="two spacing"></div>
+</div>
+{% for service in page.services %}
+  <div class="full no-padding">
+    <div class="row">
+      {% if service.image_position == 'center' %}
+        <div class="medium-6 columns">
+          <img src="{{site.url}}/{{service.image}}" alt="">
+        </div>
+        <div class="medium-6 columns">
+          <div class="service-info right-text">
+            <h2>{{service.title}}</h2>
+            <p>{{service.desc}}</p>
+            <p>{{service.desc2}}</p>
+          </div>
+        </div>
+      {% else %}
+        <div class="medium-6 columns">
+          <div class="service-info right-text">
+            <h2>{{service.title}}</h2>
+            <p>{{service.desc}}</p>
+            <p>{{service.desc2}}</p>
+          </div>
+        </div>
+        <div class="medium-6 columns">
+          <img src="{{site.url}}/{{service.image}}" alt="{{service.title}}">
+        </div>
+      {% endif %}
+    </div>
+    <div class="four spacing"></div>
+    <div class="two spacing"></div>
+  </div>
+{% endfor %}
+<div class="full light-grey centered-text">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2>More</h2>
+        <p>we would love to hear your wishlist. <a href="contact.html">tell us.</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {% for principle in page.principles %}
+      <div class="large-4 columns">
+        <div class="principle">
+          <i class="{{principle.icon}}"></i>
+          <h4>{{principle.title}}</h4>
+          <p>{{principle.desc}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="full centered-text">
+  <div class="two spacing"></div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>start your unlimited trial today</h2>
+      <div class="two spacing"></div>
+      <a href="{{site.url}}/signup.html" class="button brown boxed">Get started NOW</a>
+    </div>
+  </div>
+  <div class="two spacing"></div>
+</div>
