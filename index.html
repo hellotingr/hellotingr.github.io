@@ -38,7 +38,7 @@ slides:
   text: sign in/out <span>Works for Students & Staff</span><p>Simple yet Smart</p>
   button:
     text: learn more
-    url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+    url: "features.html"
   bg_color: "#F7C162"
   image: images/@stock/hourglass.jpg
   image-stretch: "100%"
@@ -193,7 +193,7 @@ clients:
     <div class='large-12 columns'>
       <div class='clients'>
         {% for client in page.clients %}
-          <div><a href="#"><img alt="" src="{{site.url}}/{{client.image}}"></a></div>
+          <div><a href="#"><img alt="" src="{{client.image}}"></a></div>
         {% endfor %}
       </div>
     </div>

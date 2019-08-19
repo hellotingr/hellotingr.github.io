@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TINGR. All-in-one Product for Childcare Providers.</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>TINGR. The ChildCare Product. Putting Children first.</title>
+    <description>All-in-One Product for your Childcare Center.
 </description>
-    <link>https://hellotingr.github.io/</link>
-    <atom:link href="https://hellotingr.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Aug 2019 08:19:52 -0700</pubDate>
-    <lastBuildDate>Sat, 17 Aug 2019 08:19:52 -0700</lastBuildDate>
+    <link>https://tingr.org/</link>
+    <atom:link href="https://tingr.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 19 Aug 2019 13:25:21 -0700</pubDate>
+    <lastBuildDate>Mon, 19 Aug 2019 13:25:21 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
   </channel>
