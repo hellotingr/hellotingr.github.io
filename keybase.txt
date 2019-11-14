@@ -1,4 +1,0 @@
----
-layout: none
-permalink: .well-known/acme-challenge/cb_test.html
----

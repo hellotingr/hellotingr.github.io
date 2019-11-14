@@ -26,5 +26,4 @@ gems:
 paginate: 6
 paginate_path: "blog/page:num"
 
-include: [".well-known"]
 exclude: [vendor]
