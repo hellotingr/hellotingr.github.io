@@ -1,2 +1,2 @@
 layout: none
-permalink: .well-known/acme-challenge/WX25s8lW_UeO1bN_JhMFHJOzp-bBKYMAicXKCf8zo5U.html
+permalink: .well-known/WX25s8lW_UeO1bN_JhMFHJOzp-bBKYMAicXKCf8zo5U.html
