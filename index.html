@@ -87,7 +87,11 @@ clients:
       {% for slide in page.slides %}
         <div class="slide">
           <div class="slide-info">
+            {% if slide.title contains "Take attendance" %}
+            <div style="height: 5%;"></div>
+            {% else %}
             <div class="four spacing"></div>
+            {% endif %}
             <p>{{ slide.title }}</p>
             <h1>{{ slide.text }}</h1>
             <div class="three spacing"></div>
@@ -104,6 +108,10 @@ clients:
       <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
       <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
     </nav>
+
+    {% include play-video.html %}
+
+    <a class="landing-cta cta-landing" href="https://my.tingr.org/signup.html">Sign Up Now<i class="cta-landing-animation"></i></a>
   </div>
 </div>
 <div class="full light-grey centered-text">
