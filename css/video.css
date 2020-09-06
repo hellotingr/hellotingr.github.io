@@ -26,6 +26,7 @@
   font-size: 28px;
   font-weight: bold;
   padding: 4px 10px;
+  z-index: 1;
 }
 
 .close:hover,
