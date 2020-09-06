@@ -1637,3 +1637,11 @@ div.checklist-container div.checklist-row:last-child {
   margin: 0 auto;
   font-size: 1.5rem;
 }
+
+#take-attendance-div {
+  height: 60px;
+}
+
+#landing-video-image {
+  height: 60px;
+}

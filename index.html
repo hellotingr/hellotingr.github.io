@@ -94,7 +94,11 @@ clients:
             {% endif %}
             <p>{{ slide.title }}</p>
             <h1>{{ slide.text }}</h1>
+            {% if slide.title contains "Take attendance" %}
+            <div id="take-attendance-div"></div>
+            {% else %}
             <div class="three spacing"></div>
+            {% endif %}
             <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
           </div>
           <div class="slide-left" style="background-color: {{ slide.bg_color }};">
