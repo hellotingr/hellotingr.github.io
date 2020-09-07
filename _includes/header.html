@@ -46,7 +46,11 @@
               {% if item.url %}
                 <a href="{{ item.url }}" class="{{ item.headerItemStyle }}">{{ item.name }}</a>
               {% else %}
+                {% if item.path contains "pricing" %}
+                <a href="{{site.url}}/{{ item.path }}" target="_blank" class="{{ item.headerItemStyle }}">{{ item.name }}</a>
+                {% else %}
                 <a href="{{site.url}}/{{ item.path }}" class="{{ item.headerItemStyle }}">{{ item.name }}</a>
+                {% endif %}
               {% endif %}
             </li>
           {% endif %}
