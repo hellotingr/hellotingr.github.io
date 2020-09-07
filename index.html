@@ -5,7 +5,7 @@ slides:
 - title: <b><u>THE</u></b> CHILDCARE PRODUCT
   text: putting children <u>first</u>
   button:
-    text: start your unlimited trial
+    text: Learn More
     url: "signup.html"
   bg_color: "#c0c2c5"
   image: images/@stock/children_arround.jpg
@@ -21,7 +21,7 @@ slides:
 - title: Legal. Secure. Organized.
   text: Digital State Forms<p>no more wasted paper.</p>
   button:
-    text: here is how you can save money & help <b>planet earth</b>
+    text: Learn More
     url: "features.html"
   bg_color: "#c2dde6"
   image: images/@stock/mom_filling.jpg
@@ -35,7 +35,7 @@ slides:
   image: images/@stock/picture_girl.jpg
   image-stretch: "cover"
 - title: Take attendance. Track hours.
-  text: sign in/out <span>Works for Students & Staff</span><p>Simple yet Smart</p>
+  text: sign in/out <span>Students & Staff</span><p>Simple yet Smart</p>
   button:
     text: learn more
     url: "features.html"
@@ -96,8 +96,10 @@ clients:
             <h1>{{ slide.text }}</h1>
             {% if slide.title contains "Take attendance" %}
             <div id="take-attendance-div"></div>
+            {% elsif slide.text contains "Digital State Forms" %}
+            <div id="take-attendance-div"></div>
             {% else %}
-            <div class="three spacing"></div>
+            <div id="home-page-div" class="three spacing"></div>
             {% endif %}
             <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
           </div>

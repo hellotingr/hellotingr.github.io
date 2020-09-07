@@ -154,6 +154,8 @@ div.Rtable-top-row {
   background: linear-gradient(0deg, rgba(248,87,166,1) 0%, rgba(255,88,88,1) 100%);*/
   background: rgb(248,87,166);
   background: linear-gradient(0deg, rgba(248,87,166,1) 0%, rgba(255,88,88,1) 100%);
+  position: relative;
+  top: 22px;
 }
 
 .cell-promo-small-top {
@@ -163,14 +165,18 @@ div.Rtable-top-row {
   height: 100%;
   border-radius: 10px 10px 0 0;
   padding-top: 1rem;
+  position: relative;
+  top: 22px;
 }
 .cell-promo-small-bottom {
   width: 6rem;
   margin: 0 auto;
   height: 0;
-  border-top: 1rem solid rgba(248,87,166,1);
+  border-top: 1.8rem solid rgba(248,87,166,1);
   border-left: 3rem solid transparent;
   border-right: 3rem solid transparent;
+  position: relative;
+  top: 22px;
 }
 .cell-promo-small-text {
   font-size: 0.9rem;
@@ -183,7 +189,7 @@ div.Rtable-top-row {
   color: white;
 }
 .cell-promo-small-desc {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   float: left;
   text-align: center;
   padding: 0.5rem 0.5rem;
@@ -192,9 +198,9 @@ div.Rtable-top-row {
   font-weight: bold;
 }
 
-.Rtable--5cols > .Rtable-cell-promo-mid  { width: 20%; }
-.Rtable--5cols > .Rtable-cell-promo-first  { width: 34%; }
-.Rtable--5cols > .Rtable-cell-promo-last  { width: 46%; }
+.Rtable--5cols > .Rtable-cell-promo-mid  { width: 16%; }
+.Rtable--5cols > .Rtable-cell-promo-first  { width: 20%; }
+.Rtable--5cols > .Rtable-cell-promo-last  { width: 64%; }
 
 
 .Rtable-cell {
@@ -285,7 +291,7 @@ p.Rtable-cell {
 
 .Rtable div p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 p.RTable-cell-price {

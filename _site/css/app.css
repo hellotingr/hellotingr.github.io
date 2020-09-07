@@ -3626,7 +3626,7 @@ ul.pagination {
       width: 80%; } }
   @media only screen and (min-width:40.0625em) {
     .reveal-modal {
-      top: 6.25rem; } }
+      top: 4rem; } }
   .reveal-modal.radius {
     border-radius: 3px; }
   .reveal-modal.round {
@@ -4056,7 +4056,7 @@ table {
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 1.25rem; }
+      padding: 0.5rem 1.25rem 0 1.25rem; }
 
 @media only screen and (min-width:40.0625em) {
   .tabs.vertical {
@@ -4193,13 +4193,13 @@ meta.foundation-mq-topbar {
       width: 100%;
       z-index: 99; }
     .fixed.expanded:not(.top-bar) .top-bar-section {
-      margin-top: 6.25rem;
+      margin-top: 4rem;
       z-index: 98; }
 
 .top-bar {
   background: #333333;
-  height: 6.25rem;
-  line-height: 6.25rem;
+  height: 4rem;
+  line-height: 4rem;
   margin-bottom: 0;
   overflow: hidden;
   position: relative; }
@@ -4229,17 +4229,17 @@ meta.foundation-mq-topbar {
     position: relative; }
   .top-bar .name {
     font-size: 16px;
-    height: 6.25rem;
+    height: 4rem;
     margin: 0; }
     .top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
       font-size: 1.0625rem;
-      line-height: 6.25rem;
+      line-height: 4rem;
       margin: 0; }
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
         color: #FFFFFF;
         display: block;
         font-weight: normal;
-        padding: 0 1.25rem;
+        padding: 0.5rem 1.25rem 0 1.25rem;
         width: 75%; }
   .top-bar .toggle-topbar {
     position: absolute;
@@ -4250,9 +4250,9 @@ meta.foundation-mq-topbar {
       display: block;
       font-size: 0.8125rem;
       font-weight: bold;
-      height: 6.25rem;
-      line-height: 6.25rem;
-      padding: 0 1.25rem;
+      height: 4rem;
+      line-height: 4rem;
+      padding: 0.5rem 1.25rem 0 1.25rem;
       position: relative;
       text-transform: uppercase; }
     .top-bar .toggle-topbar.menu-icon {
@@ -4320,6 +4320,9 @@ meta.foundation-mq-topbar {
       padding: 12px 0 12px 1.25rem;
       text-transform: none;
       width: 100%; }
+     .top-bar-section ul li > a:hover {
+       color: #AB8860;
+     }
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
         padding-left: 1.25rem;
@@ -4424,7 +4427,8 @@ meta.foundation-mq-topbar {
           color: #FFFFFF; }
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #555555;
-      color: #666;
+      color: #ab8860;
+      font-weight: 700;
       background: #222222; }
     .top-bar-section ul li.active > a {
       background: #AB8860;
@@ -4549,16 +4553,16 @@ meta.foundation-mq-topbar {
       color: #666; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       background: #333333;
-      line-height: 6.25rem;
-      padding: 0 1.25rem; }
+      line-height: 4rem;
+      padding: 0.5rem 1.25rem 0 1.25rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
         background: #222222; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       background: #AB8860;
       color: #FFFFFF;
-      line-height: 6.25rem;
-      padding: 0 1.25rem; }
+      line-height: 4rem;
+      padding: 0.5rem 1.25rem 0 1.25rem; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #96754f;
         color: #FFFFFF; }
@@ -4612,7 +4616,7 @@ meta.foundation-mq-topbar {
       .top-bar-section .dropdown li a {
         background: #333333;
         color: #FFFFFF;
-        line-height: 6.25rem;
+        line-height: 4rem;
         padding: 12px 1.25rem;
         white-space: nowrap; }
       .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
@@ -4633,12 +4637,12 @@ meta.foundation-mq-topbar {
       border-bottom: none;
       border-top: none;
       clear: none;
-      height: 6.25rem;
+      height: 4rem;
       width: 0; }
     .top-bar-section .has-form {
       background: #333333;
-      height: 6.25rem;
-      padding: 0 1.25rem; }
+      height: 4rem;
+      padding: 0.5rem 1.25rem 0 1.25rem; }
     .top-bar-section .right li .dropdown {
       left: auto;
       right: 0; }

@@ -185,10 +185,10 @@
     margin-left: 31%;
     bottom: 2px; }
   .cta-landing {
-    margin-bottom: 2px;
+    margin-bottom: 6px;
     }
   .landing-video {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
     }
   .checklist-column-left {
     display: none !important;
@@ -207,19 +207,18 @@
      height: 1rem;
      box-shadow: 2px 2px #888888;
      }
-   #landing-video-image {
-     height: 40px;
-   }
 }
 
-@media only screen and (max-height: 723px) {
+@media only screen and (max-height: 723px) and (max-width: 640px){
   #take-attendance-div {
     height: 0px;
   }
+  #home-page-div {
+    height: 20px;
+  }
   .cta-landing {
-    display: none !important;
+    /*display: none !important;*/
   }
   .landing-video {
-    margin-bottom: 0;
   }
 }

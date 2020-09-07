@@ -1,3 +1,6 @@
+- name: Checklist
+  path: checklist.html
+  section_id: checklist
 - name: Features
   path: features.html
   section_id: features
