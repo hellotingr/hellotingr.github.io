@@ -21,22 +21,60 @@
     display: block !important; }
 
   .top-bar-section ul li {
-    background: transparent; }
+    background: transparent;
+    margin-right: 1rem;}
 
   .top-bar-section li:not(.has-form) a:not(.button) {
-    background: transparent;
-    color: #666; }
+    background: white;
+    border-radius: 3rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    color: #5e4a4a;
+    font-weight: 600; }
+
+  .top-bar-section li:not(.has-form) a.try-now-btn {
+          color: white;
+          background: #2196F3;
+   }
+   .top-bar-section li:not(.has-form) a.login-btn {
+          color: white;
+          background: rgb(86, 196, 158);
+        }
 
   .top-bar-section li.active:not(.has-form) a:not(.button) {
-    background: transparent;
-    color: #666; }
+    background: white;
+    color: #5e4a4a;
+    font-weight: bold; }
 
   .top-bar-section ul li:hover:not(.has-form) > a {
-    background: transparent; }
+    background: white;
+    color: #5e4a4a;}
 
   .top-bar-section li.active:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background: transparent;
-    color: #666; } }
+    background: white;
+    color: #AB8860;
+    font-weight: 600; }
+
+    .top-bar-section ul li:hover:not(.has-form) > a.try-now-btn {
+      color: #e2f8fe;
+      background: #2196F3;
+    }
+
+    .top-bar-section ul li:hover:not(.has-form) > a.login-btn {
+      color: #e2f5ee;
+      background: rgb(86, 196, 158);
+    }
+
+  .top-bar-section li:not(.has-form) a.try-now-btn:hover, .top-bar-section li.active:not(.has-form) a.try-now-btn:hover, .top-bar-section li:not(.has-form) a.try-now-btn:hover {
+          color: white;
+          background: #2196F3;
+   }
+   .top-bar-section li:not(.has-form) a.login-btn:hover, .top-bar-section li.active:not(.has-form) a.login-btn:hover, .top-bar-section li:not(.has-form) a.login-btn:hover {
+          color: white;
+          background: rgb(86, 196, 158);
+        }
+     }
+
 @media only screen and (max-width: 1240px) {
   .slides-navigation {
     display: none; } }
@@ -47,6 +85,14 @@
   .top-bar {
     height: auto; }
 
+  .top-bar-section ul li > a.try-now-btn {
+    color: #2196F3;
+    font-weight: 600;
+    font-style: bold;
+  }
+  .top-bar-section ul li > a.try-now-btn:hover {
+    color: #21F3E7;
+  }
   .top-bar-section ul li.active > a {
     background: #222; }
 
@@ -105,7 +151,12 @@
   .service-info {
     padding-top: 0; }
     .service-info h2 {
-      font-size: 36px; } }
+      font-size: 36px; }
+   .landing-cta {
+     font-size: 1rem;
+     width: 25%;
+     margin-left: 37.5%; } } /* media 1024 */
+
 @media only screen and (max-width: 640px) {
   .slide-info h1 {
     font-size: 48px; }
@@ -125,4 +176,49 @@
     margin-top: 0; }
 
   .icon-text {
-    padding-left: 15px; } }
+    padding-left: 15px; }
+
+  .landing-cta {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 38%;
+    margin-left: 31%;
+    bottom: 2px; }
+  .cta-landing {
+    margin-bottom: 6px;
+    }
+  .landing-video {
+    margin-bottom: 53px;
+    }
+  .checklist-column-left {
+    display: none !important;
+  }
+  .checklist-column-center a {
+    font-size: 1rem;
+    }
+  .checklist-column-center {
+    width: 92%; }
+
+   #checklist-pdf-icon {
+     font-size: 1rem;
+     }
+   #checklist-checkbox {
+     width: 1rem;
+     height: 1rem;
+     box-shadow: 2px 2px #888888;
+     }
+}
+
+@media only screen and (max-height: 723px) and (max-width: 640px){
+  #take-attendance-div {
+    height: 0px;
+  }
+  #home-page-div {
+    height: 20px;
+  }
+  .cta-landing {
+    /*display: none !important;*/
+  }
+  .landing-video {
+  }
+}

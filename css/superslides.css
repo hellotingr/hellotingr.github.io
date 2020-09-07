@@ -40,17 +40,17 @@
   /*display: none;*/
 }
 
-.slides-pagination {
+.slides-pagination, .landing-cta {
   position: absolute;
   z-index: 3;
-  bottom: 20px;
+  bottom: 5px;
   text-align: center;
   text-align: left;
   width: 100%;
 }
 
-.slides-pagination a {
-  border: 2px solid #fff;
+.slides-pagination a, .landing-cta a {
+  border: 2px solid #f6f6f6;
   border-radius: 15px;
   width: 12px;
   height: 12px;
@@ -65,6 +65,7 @@
   overflow: hidden;
   text-indent: -100%;
 }
-.slides-pagination a.current {
-  background: #fff;
+.slides-pagination a.current, .landing-cta a.current {
+  background: #ab8860;
+  border: 2px solid #ab8860;
 }

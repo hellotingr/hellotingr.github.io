@@ -1,5 +1,9 @@
+- name: Checklist
+  path: checklist.html
+  section_id: checklist
 - name: Features
   path: features.html
+  section_id: features
 
 # - name: Pages
 #   path: about.html
@@ -25,14 +29,20 @@
   path: contact.html
   section_id: contact
 
+- name: Pricing
+  path: "pricing.html"
+  section_id: pricing
+
 - name: Try it FREE
   path: signup.html
   section_id: signup
-  headerItemStyle: "color: blue;"
+  headerItemStyle: "try-now-btn"
+  listItemStyle: "try-now-list"
 
 - name: LOGIN
   url: https://my.tingr.org
   section_id: my_site
+  headerItemStyle: "login-btn"
 # - name: Terms & conditions
 #   path: terms.html
 #   section_id: terms

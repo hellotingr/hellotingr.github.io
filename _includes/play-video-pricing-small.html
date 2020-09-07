@@ -1,0 +1,37 @@
+{% capture videomodalid %}videoSmall{{ include.pricetier }}{{ include.videomodalid }}{% endcapture %}
+{% capture videoURL %}{{ include.videoURL }}{% endcapture %}
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+  $(".price-play-button-small").click(function () {
+    var thisModel = $(this).data("target"),
+        videoSRC = $(this).attr("data-video"),
+        videoSRCauto = videoSRC + "?autoplay=1";
+    $(thisModel + ' iframe').attr('src', videoSRCauto);
+
+    $(thisModel + ' button.close').click(function () {
+      $(thisModel + ' iframe').attr('src', videoSRC);
+      console.log('closing modal')
+    });
+
+  });
+
+});
+</script>
+
+<a class="price-play-button-small" data-video="{{ videoURL }}" data-toggle="modal" data-target="#{{ videomodalid }}"><span style="font-size: 0.8rem; font-family: 'josefin sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;">Learn more</span>  <i class="fas fa-play-circle" style="font-style: normal;"></i></a>
+
+<div class="modal fade" id="{{ videomodalid }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <iframe id="nofocusvideosmall" style="height: 50vh; width: 100%;" src="" frameborder="0" allow="autoplay; fullscreen"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

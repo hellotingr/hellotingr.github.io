@@ -3,7 +3,7 @@
   <meta charset='utf-8'>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape | append: site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property='og:description' content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" property='og:title'>
@@ -47,6 +47,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,300">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600,300" media="screen" rel="stylesheet" type="text/css" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <link rel="preload" as="style" href="{{ "/css/superslides.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/superslides.css" | prepend: site.baseurl }}"/>
 
@@ -77,6 +78,12 @@
   <link rel="preload" as="style" href="{{ "/css/responsive.css" | prepend: site.baseurl }}"/>
   <link rel="stylesheet" href="{{ "/css/responsive.css" | prepend: site.baseurl }}"/>
 
+  <link rel="preload" as="style" href="{{ "/css/video.css" | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="{{ "/css/video.css" | prepend: site.baseurl }}" />
+
+  <link rel="preload" as="style" href="{{ "/css/table.css" | prepend: site.baseurl }}"/>
+  <link rel="stylesheet" href="{{ "/css/table.css" | prepend: site.baseurl }}"/>
+
   <link rel="preload" as="script" href="{{ "/bower_components/modernizr/modernizr.js" | prepend: site.baseurl }}"/>
   <script src="{{ "/bower_components/modernizr/modernizr.js" | prepend: site.baseurl }}"></script>
 
@@ -91,4 +98,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-N2HQHXL');
   </script>
+
+
 </head>
