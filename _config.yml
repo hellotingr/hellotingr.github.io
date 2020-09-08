@@ -30,3 +30,4 @@ exclude:
   - 'vendor/'
   - 'about.html'
   - 'portfolio.html'
+  - 'signup-ori.html'
