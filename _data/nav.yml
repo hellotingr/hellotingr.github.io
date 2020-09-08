@@ -30,11 +30,11 @@
   section_id: contact
 
 - name: Pricing
-  path: "pricing.html"
+  path: "signup.html"
   section_id: pricing
 
 - name: Try it FREE
-  path: signup.html
+  url: https://my.tingr.org/signup.html
   section_id: signup
   headerItemStyle: "try-now-btn"
   listItemStyle: "try-now-list"
