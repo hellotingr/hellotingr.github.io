@@ -157,7 +157,7 @@ featureList:
     <div style="order:4; position: sticky; top: 0; background: white; padding: 0.5rem 0.1rem;" class="Rtable-cell Rtable-cell-col2">
       <p class="Rtable-cell">{{ page.priceBasic-name }}</p>
       <p class="RTable-cell-price">{{ page.priceBasic-description }}</p>
-      <p><a class="price-cta-button" style="background-color: #56C49E; width: 80%;" href="https://my.tingr.org/signup.html">SIGN UP</a></p>
+      <p><a class="price-cta-button" style="background-color: #56C49E; width: 80%;" target="_blank" href="https://my.tingr.org/signup.html">SIGN UP</a></p>
     </div>
     {% assign start = 5 %}
     {% assign alternate-row = start | modulo:2 %}
@@ -183,7 +183,7 @@ featureList:
     <div style="order:4; position: sticky; top: 0; background: white; padding: 0.5rem 0.1rem;" class="Rtable-cell Rtable-cell-col3">
       <p class="Rtable-cell">{{ page.priceStandard-name }}</p>
       <p class="RTable-cell-price">{{ page.priceStandard-description }}</p>
-      <p><a class="price-cta-button" style="background-color: #8d44d3; width: 80%;" href="https://my.tingr.org/signup.html">SIGN UP</a></p>
+      <p><a class="price-cta-button" style="background-color: #8d44d3; width: 80%;" target="_blank" href="https://my.tingr.org/signup.html">SIGN UP</a></p>
     </div>
     {% assign start = 5 %}
     {% assign alternate-row = start | modulo:2 %}
@@ -310,7 +310,7 @@ featureList:
     {% comment %}Unliited Trial Pricing{% endcomment %}
     <div id="basic" class="tabcontent">
       <div class="small-header-row"><span>Basic</span>
-        <a style="background-color: #56C49E;" href="https://my.tingr.org/signup.html">Sign Up</a>
+        <a style="background-color: #56C49E;" target="_blank" href="https://my.tingr.org/signup.html">Sign Up</a>
       </div>
       {% assign alternate-row = 0 %}
       {% for features in page.featureList %}
@@ -344,7 +344,7 @@ featureList:
     {% comment %}Standard Pricing{% endcomment %}
     <div id="standard" class="tabcontent">
       <div class="small-header-row"><span>Standard</span>
-        <a style="background-color: #8d44d3;" href="https://my.tingr.org/signup.html">Sign Up</a>
+        <a style="background-color: #8d44d3;" target="_blank" href="https://my.tingr.org/signup.html">Sign Up</a>
       </div>
       {% assign alternate-row = 0 %}
       {% for features in page.featureList %}
