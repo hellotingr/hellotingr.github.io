@@ -40,7 +40,7 @@
   listItemStyle: "try-now-list"
 
 - name: LOGIN
-  url: https://my.tingr.org/login
+  url: https://my.tingr.org
   section_id: my_site
   headerItemStyle: "login-btn"
 # - name: Terms & conditions
