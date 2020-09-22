@@ -1,9 +1,11 @@
----
-layout: none
----
+Sitemap: https://www.tingr.org/sitemap_index.xml
+
 User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
 Allow: /
 Disallow: /vendor/
 Disallow: /contact/
 Disallow: /blog/
+Disallow: /bower_components/
+
+User-agent: CCBot
+Disallow: /
