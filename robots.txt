@@ -4,3 +4,6 @@ layout: none
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
 Allow: /
+Disallow: /vendor/
+Disallow: /contact/
+Disallow: /blog/
