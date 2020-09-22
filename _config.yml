@@ -23,7 +23,7 @@ markdown: kramdown
 gems:
   - jekyll-paginate
   - jekyll-compose
-  - jekyll-seo-tag
+  # - jekyll-seo-tag
   # - jekyll-sitemap
 #
 # paginate: 6
