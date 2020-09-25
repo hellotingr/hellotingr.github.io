@@ -38,7 +38,7 @@ exclude:
   - 'signup-ori.html'
   - 'contact/'
   - 'blog/'
-  - 'bower_components/'
+  # - 'bower_components/'
 
 sass:
   style: compressed
