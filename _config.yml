@@ -6,10 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: For Childcare Providers. Digital Enrollments & Beyond.
+title: Childcare Registration, Affordable Child Care Software and App.
 email: hello@tingr.org
 description: > # this means to ignore newlines until "baseurl:"
-  All-in-One Product for your Child Care.
+  We build innovative products and affordable management child care software for childcare providers. Visit here for childcare registration at tingr.org
+keywords: > # this means to ignore newlines until "baseurl:"
+  test
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tingr.org" # the base hostname & protocol for your site https://tingr.org
 # twitter_username: tingr
@@ -34,3 +36,9 @@ exclude:
   - 'about.html'
   - 'portfolio.html'
   - 'signup-ori.html'
+  - 'contact/'
+  - 'blog/'
+  - 'bower_components/'
+
+sass:
+  style: compressed
