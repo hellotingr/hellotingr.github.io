@@ -3,7 +3,7 @@
   <meta charset='utf-8'>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
 
-  <title>{% if page.title %}{{ page.title | escape | append: site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape| append: " " | append: site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property='og:description' content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" property='og:title'>
@@ -90,15 +90,14 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link data-react-helmet=true rel=alternate href="https://www.tingr.org" hreflang=en />
 
-  <title data-react-helmet=true>Tingr - Childcare Management Software for Childcare Providers</title>
   <link data-react-helmet=true rel=canonical href="https://www.tingr.org"/>
   <link data-react-helmet=true rel=alternate href="https://www.tingr.org" hreflang=en />
-  <link data-react-helmet=true rel=alternate href="https://wow.Tingr.com/fr/" hreflang=fr />
-  <link data-react-helmet=true rel=alternate href="https://wow.Tingr.com/es/" hreflang=es />
-  <meta data-react-helmet=true name=description content="Tingr is the all-in-one childcare software with student enrollments, parent messaging, attendance, newsletters. It&#x27;s childcare management made easy! Digitize your school instantly!"/>
-  <meta data-react-helmet=true property=og:title content="Tingr - Childcare Management Software for Childcare Providers"/>
-  <meta data-react-helmet=true property=og:description content="Tingr is the all-in-one childcare software with student enrollments, parent messaging, attendance, newsletters. It&#x27;s childcare management made easy! Digitize your school instantly!"/>
-  <meta data-react-helmet=true property=og:url content="https://www.tingr.org"/>
+
+  <meta data-react-helmet=true name=description content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+  <meta data-react-helmet=true property=og:description content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+
+  <meta data-react-helmet=true property=og:title content="Tingr Childcare Daycare Software for Childcare Daycare Providers"/>
+  <meta data-react-helmet=true property=og:url content="https://tingr.org"/>
 
   <!-- Google Tag Manager -->
   <script>

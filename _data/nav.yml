@@ -1,9 +1,29 @@
-- name: Checklist
-  path: checklist.html
-  section_id: checklist
 - name: Features
   path: features.html
   section_id: features
+
+- name: Try it FREE
+  url: https://my.tingr.org/signup.html
+  section_id: signup
+  headerItemStyle: "try-now-btn"
+  listItemStyle: "try-now-list"
+
+- name: Childcare Checklist
+  path: checklist.html
+  section_id: checklist
+
+- name: Pricing
+  path: "signup.html"
+  section_id: pricing
+
+- name: Contact Us
+  path: contact.html
+  section_id: contact
+
+- name: LOGIN
+  url: https://my.tingr.org
+  section_id: my_site
+  headerItemStyle: "login-btn"
 
 # - name: Pages
 #   path: about.html
@@ -25,24 +45,9 @@
 #       path: portfolio-item.html
 #     - name: Single Page 2
 #       path: portfolio-item-2.html
-- name: Contact
-  path: contact.html
-  section_id: contact
 
-- name: Pricing
-  path: "signup.html"
-  section_id: pricing
 
-- name: Try it FREE
-  url: https://my.tingr.org/signup.html
-  section_id: signup
-  headerItemStyle: "try-now-btn"
-  listItemStyle: "try-now-list"
 
-- name: LOGIN
-  url: https://my.tingr.org
-  section_id: my_site
-  headerItemStyle: "login-btn"
 # - name: Terms & conditions
 #   path: terms.html
 #   section_id: terms
