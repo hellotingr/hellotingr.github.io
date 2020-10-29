@@ -13,11 +13,11 @@ section_id: blog
         {% if post.images %}
           {% if post.images.size > 1 %}
             <a href="{{post.url}}" class='two-images'>
-              <img src="{{site.url}}/{{post.images[0]}}" alt="post" class="left-image">
-              <img src="{{site.url}}/{{post.images[1]}}" alt="post" class="right-image">
+              <img src="{{site.url}}/{{post.images[0]}}" alt="tingr" class="left-image">
+              <img src="{{site.url}}/{{post.images[1]}}" alt="tingr" class="right-image">
             </a>
           {% else %}
-            <a href="{{post.url}}"><img src="{{site.url}}/{{post.images[0]}}" alt="post"></a>
+            <a href="{{post.url}}"><img alt="tingr" src="{{site.url}}/{{post.images[0]}}" alt="post"></a>
           {% endif %}
         {% endif %}
         <div class="post-content">
@@ -54,11 +54,11 @@ section_id: blog
         {% if post.images %}
           {% if post.images.size > 1 %}
             <a href="{{post.url}}" class='two-images'>
-              <img src="{{site.url}}/{{post.images[0]}}" alt="post" class="left-image">
-              <img src="{{site.url}}/{{post.images[1]}}" alt="post" class="right-image">
+              <img alt="tingr" src="{{site.url}}/{{post.images[0]}}" class="left-image">
+              <img alt="tingr" src="{{site.url}}/{{post.images[1]}}" class="right-image">
             </a>
           {% else %}
-            <a href="{{post.url}}"><img src="{{site.url}}/{{post.images[0]}}" alt="post"></a>
+            <a href="{{post.url}}"><img src="{{site.url}}/{{post.images[0]}}" alt="tingr"></a>
           {% endif %}
         {% endif %}
         <div class="post-content">
