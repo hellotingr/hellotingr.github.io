@@ -1,36 +1,35 @@
 ---
 layout: default
-title: Contact-free Student record keeping product for Childcare providers.
+title: Student record keeping and more for Childcare providers.
 excerpt: "(Re)Opening your Childcare or Daycare? Tingr is parents' choice when it comes to running your center, small or big, safely during COVID-19. Give your customers a peace of mind. Send and recieve student paperwork instantly. And more..."
 keywords: Free trial Childcare Management software  Tingr  Preschool Paperwork  State Forms  Free Childcare software  Tingr for Schools  Free website for Childcare  Childcare Daycare Attendance  CDSS Forms  Spanish Daycare Forms  Afterschool  Daycare Attendance  Student Memory Books, Attendance Sheet Student Roster
 section_id: home
 slides:
-- title: Parents' choice.
-  text: COLLECT STUDENT PAPERWORK.<p>SIMPLE & <u>CONVENIENT</u> to everybody.</p>
+- title: Childcares. Pre-Schools. Home Daycares.
+  text: BEST STUDENT RECORD KEEPING SOFTWARE.<p>automatically <u>organized</u> paperwork.</p>
+  image: images/@stock/girl_holding.jpg
+  image-stretch: "cover"
   button:
-    text: (Re)Opening Childcare during COVID-19? Tingr can reduce risk. Learn more...
+    text: Learn More...
+    url: "features.html"
+- title: best suited in this pandemic era.
+  text: Enroll Students safely.
+  button:
+    text: Administrators, Tingr can save your time. Guaranteed.
     url: "features.html"
   bg_color: "#ffffff"
-  image: images/@stock/children_arround.jpg
-  image-stretch: "100%"
-- title: Legal. Secure. Ready to Use.
-  text: digitized State Forms<p>no more wasted paper.</p>
+  image: images/@stock/backtoschool.jpg
+  image-stretch: "cover"
+- title: Forms. Documents.
+  text: Collect State Forms & More...<p><u>Parents love that!</u></p>
   button:
     text: SEE HOW IT WORKS
     url: "features.html"
   bg_color: "#c2dde6"
   image: images/@stock/mom_filling.jpg
   image-stretch: "cover"
-- title:
-  text: Enrolling Students.<p>Never been so easy. Parents love that.</p>
-  button:
-    text: Administrators, Tingr can save your time. Guaranteed.
-    url: "features.html"
-  bg_color: "#ffffff"
-  image: images/@stock/enrollmenrts.jpg
-  image-stretch: "cover"
 - title: Pictures. Videos. Messages.
-  text: Capture. Share. <p>create an entry into <b>student memory book</b></p>
+  text: IT'S FUN TO Capture & Share. <p>automatically creates <b>student memory book</b> for you.</p>
   button:
     text: learn more
     url: "features.html"
@@ -38,7 +37,7 @@ slides:
   image: images/@stock/picture_girl.jpg
   image-stretch: "cover"
 - title: how about your smart phone as Attendance sheet?
-  text: Attedance.<p>Track Students & Staff too!</p>
+  text: Attedance.<br/> ✅ TAKEN<p>Tracks Student & Staff hours at your school.</p>
   button:
     text: see how it works
     url: "features.html"
@@ -104,7 +103,9 @@ clients:
             {% else %}
             <div id="home-page-div" class="three spacing"></div>
             {% endif %}
-            <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
+            {% if slide.button.text %}
+              <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
+            {% endif %}
           </div>
           <div class="slide-left" style="background-color: {{ slide.bg_color }};">
           </div>
