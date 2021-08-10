@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tingr.org/features.html</loc>
+    <loc>https://tingr.org/signup.html</loc>
   </url>
   <url>
-    <loc>https://tingr.org/signup.html</loc>
+    <loc>https://tingr.org/features.html</loc>
   </url>
   <url>
     <loc>https://tingr.org/checklist.html</loc>
