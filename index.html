@@ -5,8 +5,8 @@ excerpt: "Running a Childcare/Daycare/Preschool/Afterschool in pandemic is chall
 keywords: Childcare Daycare Preschool product software  Tingr  Preschool Paperwork  State Forms  Free Childcare software  Tingr for Schools  Free website for Childcare  Childcare Daycare Attendance  CDSS Forms  Spanish Daycare Forms  Afterschool  Daycare Attendance  Student Memory Books, Attendance Sheet Student Roster
 section_id: home
 slides:
-  - title: Childcares. Pre-Schools. Home Daycares.
-    textH1: BEST STUDENT RECORD KEEPING SOFTWARE PRODUCT FOR CHILDCARE PROVIDERS.<p>serving families with local Childcare providers safely!</p>
+  - title: <i>from student enrollments to everything else....</i>
+    textH1: BEST SOFTWARE PRODUCT FOR CHILDCARE PROVIDERS.<p>serving families with local Childcare providers safely!</p>
     image: images/@stock/backtoschool.jpg
     image-stretch: "cover"
     bg_color: "#ffffff"
@@ -23,7 +23,7 @@ slides:
       url: "features.html"
 
   - title: Forms. Documents.
-    text: Digitalized Forms & Documents<p><u>Finally, Parents love to fill!</u></p>
+    text: Digital Forms & Docs<p><u>Finally, Parents love to fill!</u></p>
     button:
       text: SEE HOW IT WORKS
       url: "features.html"
@@ -31,7 +31,7 @@ slides:
     image: images/@stock/mom_filling.jpg
     image-stretch: "cover"
   - title: Pictures. Videos. Messages.
-    text: IT'S FUN TO Capture & Share. <p>automatically creates <b>student memory book</b> for you.</p>
+    text: IT'S FUN TO CAPTURE. <p>automatically creates <b>student memory book</b> for you.</p>
     button:
       text: learn more
       url: "features.html"
@@ -84,53 +84,52 @@ clients:
 - image: images/@stock/client_4.jpg
 - image: images/@stock/client_5.jpg
 ---
-
 <div class="full no-padding" style="height: 100vh;">
   <div id="slides">
     <div class="slides-container">
       {% for slide in page.slides %}
-        <div class="slide">
-          <div class="slide-info">
-            {% if slide.title contains "Take attendance" %}
-            <div style="height: 5%;"></div>
-            {% else %}
-            <div class="four spacing"></div>
-            {% endif %}
-            <p>{{ slide.title }}</p>
-            {% if slide.textH1 %}
-            <h1>{{ slide.textH1 }}</h1>
-            {% else %}
-            <div class="t_landingpage_items_title">
+      <div class="slide">
+        <div class="slide-info">
+          <div class="two spacing"></div>
+          <p>{{ slide.title }}</p>
+          {% if slide.textH1 %}
+          <h1>{{ slide.textH1 }}</h1>
+          {% else %}
+          <div class="t_landingpage_items_title">
             <h2 class="t_landingpage_items_title">{{ slide.text }}</h2>
-            </div>
-            {% endif %}
+          </div>
+          {% endif %}
 
-            {% if slide.title contains "Take attendance" %}
-            <div id="take-attendance-div"></div>
-            {% elsif slide.text contains "Digital State Forms" %}
-            <div id="take-attendance-div"></div>
-            {% else %}
-            <div id="home-page-div" class="three spacing"></div>
-            {% endif %}
-            {% if slide.button.text %}
-              <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
-            {% endif %}
-          </div>
-          <div class="slide-left" style="background-color: {{ slide.bg_color }};">
-          </div>
-          <div class="slide-right" style="background: url({{ slide.image }}) center center no-repeat; background-size: {{ slide.image-stretch }};">
-          </div>
+          {% if slide.button.text %}
+            <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
+          {% endif %}
         </div>
+
+        <div class="slide-left" style="background-color: {{ slide.bg_color }};">
+        </div>
+        <div class="slide-right" style="background: url({{ slide.image }}) center center no-repeat; background-size: {{ slide.image-stretch }};">
+        </div>
+      </div>
       {% endfor %}
     </div>
     <nav class="slides-navigation">
       <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
       <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
     </nav>
+  </div>
+</div>
+<!-- <div class="full light-grey centered-text">
+  <div class="row">
+    <div class="medium-10 medium-centered columns">
 
+  {% include play-video.html %}
+  <a class="landing-cta cta-landing" href="https://my.tingr.org/signup.html" target="_blank">Sign Up Now<i class="cta-landing-animation"></i></a>
+  </div>
+  </div>
+</div> -->
+<div class="row">
+  <div class="large-centered columns">
     {% include play-video.html %}
-
-    <a class="landing-cta cta-landing" href="https://my.tingr.org/signup.html" target="_blank">Sign Up Now<i class="cta-landing-animation"></i></a>
   </div>
 </div>
 <div class="full light-grey centered-text">
@@ -138,15 +137,13 @@ clients:
     <div class="row">
       <div class="medium-10 medium-centered columns">
         <img src="images/@stock/t_logo.png" alt="tingr" class="wow flipInY" data-wow-duration="2s" data-wow-delay="0.1s">
-        <div class="spacing"></div>
-        <h2>What we do</h2>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="large-10 large-centered columns">
       <p class="big-text">
-        We build innovative and affordable software products for Childcare Daycare providers of all sizes. <br/>In other words, you will have more time to spend with Children than running through exhausting administrative work.
+        We build innovative and affordable software products for Childcare Daycare providers of all sizes. <br />In other words, you will have more time to spend with Children than running through exhausting administrative work.
       </p>
       <p class="bold-text">
         Our customers say..."[ref: Tingr] Every Daycare's must have product. Easy to use. Not cluttered with unnecessary things."
@@ -161,13 +158,13 @@ clients:
   <div class="three spacing"></div>
   <div class="row">
     {% for milestone in page.milestones %}
-      <div class="large-3 columns ">
-        <div class="milestone centered-text">
-          <div class="number" style="color: #333" data-from="{{milestone.from}}" data-to="{{milestone.to}}"></div>
-          <span>{{milestone.title}}</span>
-          <div class="spacing"></div>
-        </div>
+    <div class="large-3 columns ">
+      <div class="milestone centered-text">
+        <div class="number" style="color: #333" data-from="{{milestone.from}}" data-to="{{milestone.to}}"></div>
+        <span>{{milestone.title}}</span>
+        <div class="spacing"></div>
       </div>
+    </div>
     {% endfor %}
   </div>
   <div class="three spacing"></div>
@@ -176,32 +173,32 @@ clients:
   <div class="row">
     <div class="large-6 columns">
       {% for testimonial in page.testimonials_left %}
-        <div class="quote wow slideInLeft" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
-          <div class="row">
-            <div class="small-3 columns">
-              <img src="{{testimonial.avatar}}" alt="tingr">
-            </div>
-            <div class="small-9 columns">
-              <p>{{testimonial.content}}</p>
-              <p class="author">{{testimonial.author}}</p>
-            </div>
+      <div class="quote wow slideInLeft" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+        <div class="row">
+          <div class="small-3 columns">
+            <img src="{{testimonial.avatar}}" alt="tingr">
+          </div>
+          <div class="small-9 columns">
+            <p>{{testimonial.content}}</p>
+            <p class="author">{{testimonial.author}}</p>
           </div>
         </div>
+      </div>
       {% endfor %}
     </div>
     <div class="large-6 columns">
       {% for testimonial in page.testimonials_right %}
-        <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
-          <div class="row">
-            <div class="small-3 columns">
-              <img src="{{testimonial.avatar}}" alt="tingr">
-            </div>
-            <div class="small-9 columns">
-              <p>{{testimonial.content}}</p>
-              <p class="author">{{testimonial.author}}</p>
-            </div>
+      <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+        <div class="row">
+          <div class="small-3 columns">
+            <img src="{{testimonial.avatar}}" alt="tingr">
+          </div>
+          <div class="small-9 columns">
+            <p>{{testimonial.content}}</p>
+            <p class="author">{{testimonial.author}}</p>
           </div>
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>
@@ -212,10 +209,9 @@ clients:
     <div class='large-12 columns'>
       <div class='clients'>
         {% for client in page.clients %}
-          <div><a href="#"><img alt="tingr" src="{{client.image}}"></a></div>
+        <div><a href="#"><img alt="tingr" src="{{client.image}}"></a></div>
         {% endfor %}
       </div>
     </div>
   </div>
-  <div class="two spacing"></div>
 </div>
