@@ -4,9 +4,6 @@
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
 
   <title>{{ page.title }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property='og:description' content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" property='og:title'>
 
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | strip_html | strip_newlines }}{% else %}{{ 'childcare registration, affordable child care software, childcare management software' }}{% endif %}">
   <meta content='website' property='og:type'>
@@ -93,7 +90,7 @@
   <meta data-react-helmet=true name=description content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
   <meta data-react-helmet=true property=og:description content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
 
-  <meta data-react-helmet=true property=og:title content="Dear Admins: Fill your school spots quickly. Here is how..."/>
+  <meta data-react-helmet=true property=og:title content="Tingr serves families with local Childcare providers safely! learn more..."/>
   <meta data-react-helmet=true property=og:url content="https://tingr.org"/>
   <meta data-react-helmet=true property=og:image content="https://tingr.org/images/@stock/backtoschool.jpg"/>
 

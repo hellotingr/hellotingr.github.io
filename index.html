@@ -5,17 +5,17 @@ excerpt: "Running a Childcare/Daycare/Preschool/Afterschool in pandemic is chall
 keywords: Childcare Daycare Preschool product software  Tingr  Preschool Paperwork  State Forms  Free Childcare software  Tingr for Schools  Free website for Childcare  Childcare Daycare Attendance  CDSS Forms  Spanish Daycare Forms  Afterschool  Daycare Attendance  Student Memory Books, Attendance Sheet Student Roster
 section_id: home
 slides:
-  - title: Open Your School Doors for Easy Enrollments Instantly!
-    text: Fill-up Your Spots Quickly
+  - title: Childcares. Pre-Schools. Home Daycares.
+    textH1: BEST STUDENT RECORD KEEPING SOFTWARE PRODUCT FOR CHILDCARE PROVIDERS.<p>serving families with local Childcare providers safely!</p>
     image: images/@stock/backtoschool.jpg
     image-stretch: "cover"
     bg_color: "#ffffff"
     button:
-      text: <b>Click here to Sign-up today</b><br/>cancel anytime. 6months on us.
+      text: <b>Click here to Sign-up now</b><br/>cancel anytime. 6months on us.
       url: "https://my.tingr.org/signup.html"
 
-  - title: Childcares. Pre-Schools. Home Daycares.
-    text: BEST STUDENT RECORD KEEPING SOFTWARE.<p>automatically <u>organized</u> paperwork.</p>
+  - title: Open Your School Doors for Easy Enrollments.
+    text: Fill-up your spots quickly!<p>Attract <u>millennials</u> with right tools.</p>
     image: images/@stock/girl_holding.jpg
     image-stretch: "cover"
     button:
@@ -23,7 +23,7 @@ slides:
       url: "features.html"
 
   - title: Forms. Documents.
-    text: Digitalized Forms & Documents<p><u>Parents love to fill!</u></p>
+    text: Digitalized Forms & Documents<p><u>Finally, Parents love to fill!</u></p>
     button:
       text: SEE HOW IT WORKS
       url: "features.html"
@@ -97,7 +97,14 @@ clients:
             <div class="four spacing"></div>
             {% endif %}
             <p>{{ slide.title }}</p>
-            <h1>{{ slide.text }}</h1>
+            {% if slide.textH1 %}
+            <h1>{{ slide.textH1 }}</h1>
+            {% else %}
+            <div class="t_landingpage_items_title">
+            <h2 class="t_landingpage_items_title">{{ slide.text }}</h2>
+            </div>
+            {% endif %}
+
             {% if slide.title contains "Take attendance" %}
             <div id="take-attendance-div"></div>
             {% elsif slide.text contains "Digital State Forms" %}
@@ -166,14 +173,6 @@ clients:
   <div class="three spacing"></div>
 </div>
 <div class="full">
-  <div class="section-title">
-    <div class="row">
-      <div class="medium-10 medium-centered columns">
-        <h2>Good things customers said about Tingr</h2>
-        <img src="images/@stock/horizontal_bar_medblue.png" alt="tingr">
-      </div>
-    </div>
-  </div>
   <div class="row">
     <div class="large-6 columns">
       {% for testimonial in page.testimonials_left %}

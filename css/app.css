@@ -52,10 +52,16 @@ html {
   box-sizing: inherit; }
 
 html, body {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 .terms_privacy_text p {
   font-weight: 100;
+}
+
+.t_landingpage_items_title {
+  font-size: 2em !important;
+  font-weight: bolder !important;
 }
 
 body {
