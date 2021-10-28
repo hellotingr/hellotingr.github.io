@@ -56,6 +56,21 @@
 .full.light-cyan {
   background: #dae9ec; }
 
+.full.green-accent-2 {
+  background: #69f0ae; }
+
+.full.deep-orange-lighten-2 {
+  background: #ff7c38; }
+
+.full.black-darken-4 {
+  background: #040406; }
+
+.full.brown-darken-4 {
+  background: #ffb145; }
+
+.full.deep-blue {
+  background: #2f267e; }
+
 .full.grey {
   background: #edebe7; }
 
@@ -67,6 +82,7 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   background-attachment: fixed; }
+
 
 .full.tree {
   min-height: 60%;
@@ -144,7 +160,9 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
 hr {
   border-color: #eee;
   marign: 0; }
-
+.white-text {
+  color: #fff;
+}
 .section-title {
   text-align: center;
   margin-bottom: 40px; }
@@ -273,6 +291,16 @@ body {
   color: #fff;
   background: #AB8860; }
 
+.button.boxed.blue {
+  z-index: 999;
+  border: 1px solid #2196f3;
+  background: #2196f3;
+  color: #fff; }
+
+.button.boxed.blue:hover {
+  color: #2196f3;
+  background: #fff;
+}
 /* animation */
 @-webkit-keyframes move {
   0% {

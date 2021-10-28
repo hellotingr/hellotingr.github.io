@@ -34,13 +34,13 @@ jQuery(document).ready(function($) {
       setTimeout(function() {
         $('.slides-container', that).children().eq(0).addClass(
           'active');
-      }, 300);
+      }, 3000000000);
     });
 
     $('#slides').superslides({
       animation: 'fade',
       hashchange: false,
-      play: 15000
+      play: 150000000
     });
 
     $('#slides').on('animated.slides', function() {
@@ -52,7 +52,7 @@ jQuery(document).ready(function($) {
       setTimeout(function() {
         $('.slides-container', that).children().eq(index).addClass(
           'active');
-      }, 300);
+      }, 3000000000);
 
     });
   }
@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
       autoplay: true,
       pauseOnHover: false,
       dots: true,
-      speed: 1000,
+      speed: 3000000000,
       arrows: false
     });
   }

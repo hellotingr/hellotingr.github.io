@@ -1,51 +1,10 @@
 ---
 layout: default
-title: Quick & easy student enrollments product for Childcare providers. Daycares. Preschools. Afterschools.
+title: Childcare software product for Providers of all sizes. Home. Center. Daycares. Preschools. Afterschools.
 excerpt: "Running a Childcare/Daycare/Preschool/Afterschool in pandemic is challenging. Tingr provides easy to use software tools for Early Childcare providers -from- Student Registrations, Digital Forms, Attendance, Parent Communication and -to- a lot more! Start with 6mos trial on us!"
 keywords: Childcare Daycare Preschool product software  Tingr  Preschool Paperwork  State Forms  Free Childcare software  Tingr for Schools  Free website for Childcare  Childcare Daycare Attendance  CDSS Forms  Spanish Daycare Forms  Afterschool  Daycare Attendance  Student Memory Books, Attendance Sheet Student Roster
 section_id: home
-slides:
-  - title: <i>from student enrollments to everything else....</i>
-    textH1: BEST SOFTWARE PRODUCT FOR CHILDCARE PROVIDERS.<p>serving families with local Childcare providers safely!</p>
-    image: images/@stock/backtoschool.jpg
-    image-stretch: "cover"
-    bg_color: "#ffffff"
-    button:
-      text: <b>Click here to Sign-up now</b><br/>cancel anytime. 6months on us.
-      url: "https://my.tingr.org/signup.html"
 
-  - title: Open Your School Doors for Easy Enrollments.
-    text: Fill-up your spots quickly!<p>Attract <u>millennials</u> with right tools.</p>
-    image: images/@stock/girl_holding.jpg
-    image-stretch: "cover"
-    button:
-      text: Learn More...
-      url: "features.html"
-
-  - title: Forms. Documents.
-    text: Digital Forms & Docs<p><u>Finally, Parents love to fill!</u></p>
-    button:
-      text: SEE HOW IT WORKS
-      url: "features.html"
-    bg_color: "#c2dde6"
-    image: images/@stock/mom_filling.jpg
-    image-stretch: "cover"
-  - title: Pictures. Videos. Messages.
-    text: IT'S FUN TO CAPTURE. <p>automatically creates <b>student memory book</b> for you.</p>
-    button:
-      text: learn more
-      url: "features.html"
-    bg_color: "rgba(153	216	194)"
-    image: images/@stock/picture_girl.jpg
-    image-stretch: "cover"
-  - title: how about your smart phone as Attendance sheet?
-    text: Attedance.<br/> ✅ TAKEN<p>Tracks Student & Staff hours at your school.</p>
-    button:
-      text: see how it works
-      url: "features.html"
-    bg_color: "#F7C162"
-    image: images/@stock/hourglass.jpg
-    image-stretch: "100%"
 milestones:
 - title: Digital Forms Filled
   from: 7000
@@ -78,6 +37,7 @@ testimonials_right:
   avatar: images/@stock/testimonial-welcome.jpg
 
 clients:
+- image: images/@stock/agape.png
 - image: images/@stock/client_1.png
 - image: images/@stock/client_2.png
 - image: images/@stock/client_3.jpg
@@ -87,89 +47,129 @@ clients:
 <div class="full no-padding" style="height: 100vh;">
   <div id="slides">
     <div class="slides-container">
-      {% for slide in page.slides %}
       <div class="slide">
         <div class="slide-info">
           <div class="two spacing"></div>
-          <p>{{ slide.title }}</p>
-          {% if slide.textH1 %}
-          <h1>{{ slide.textH1 }}</h1>
-          {% else %}
-          <div class="t_landingpage_items_title">
-            <h2 class="t_landingpage_items_title">{{ slide.text }}</h2>
-          </div>
-          {% endif %}
-
-          {% if slide.button.text %}
-            <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
-          {% endif %}
+          <p>Running a Childcare alone is a daunting task!</p>
+          <h1>Tingr saves Childcare Providers' Time & Money.</h1>
+          <p class="small-text">
+           *Fill Your Spots Quickly.
+          </p>
+          <a href="https://my.tingr.org/signup.html" class="button boxed blue">
+            <b>SIGN-UP NOW</b>
+            <br/>
+            <br/>
+            No CC reqd. Cancel anytime. 2 minute setup.
+          </a>
         </div>
 
-        <div class="slide-left" style="background-color: {{ slide.bg_color }};">
+        <div class="slide-left">
         </div>
-        <div class="slide-right" style="background: url({{ slide.image }}) center center no-repeat; background-size: {{ slide.image-stretch }};">
+        <div class="slide-right" style="background: url(images/@stock/landing_1.jpg) center center no-repeat; background-size: cover;">
         </div>
       </div>
-      {% endfor %}
     </div>
-    <nav class="slides-navigation">
-      <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
-      <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
-    </nav>
   </div>
 </div>
-<!-- <div class="full light-grey centered-text">
+<div class="full deep-blue">
+  <div class="row" >
+    <div class="medium-6 columns">
+      <div class="service-info">
+        <div class="centered-text">
+          <h2 class="white-text">Top rated by Childcare Providers</h2>
+        </div>
+        <div class="two spacing"></div>
+        <img src="images/@stock/5_starrating.png" alt="tingr rating">
+      </div>
+    </div>
+
+    <div class="medium-6 columns">
+      <div>
+        <p class="centered-text white-text">Click to watch how it works in 2min.</p>
+        {% include play-video.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="full no-padding green-accent-2">
+  <div class="one spacing"></div>
   <div class="row">
-    <div class="medium-10 medium-centered columns">
+      <div class="medium-6 columns">
+        <div class="service-info right-text">
+          <h2>Digital Paperwork</h2>
+          <p>Gathering Student Forms & Documents, Never Been This Easy. Digitally Send and Recieve State Forms, Parent Handbooks and More -from- Your Fingertips. <br/><br/>Secure & Ready to Print Anytime You Want!</p>
+          <div class="two spacing"></div>
 
-  {% include play-video.html %}
-  <a class="landing-cta cta-landing" href="https://my.tingr.org/signup.html" target="_blank">Sign Up Now<i class="cta-landing-animation"></i></a>
+          <u>Savings from Print Supplies.<br/>Savings for Mother Earth!!</u>
+        </div>
+      </div>
+      <div class="medium-6 columns">
+        <img src="images/@stock/mom_filling.jpg" alt="tingr">
+      </div>
   </div>
-  </div>
-</div> -->
-<div class="row">
-  <div class="large-centered columns">
-    {% include play-video.html %}
-  </div>
+  <div class="one spacing"></div>
 </div>
-<div class="full light-grey centered-text">
-  <div class="section-title">
-    <div class="row">
-      <div class="medium-10 medium-centered columns">
-        <img src="images/@stock/t_logo.png" alt="tingr" class="wow flipInY" data-wow-duration="2s" data-wow-delay="0.1s">
+
+<div class="full no-padding deep-orange-lighten-2">
+  <div class="one spacing"></div>
+  <div class="row">
+    <div class="medium-6 columns">
+      <div class="service-info right-text">
+        <h2>Open Your Doors for Millennial Parents</h2>
+        <p>Improve Your Visibility.</p><p>Attract Parents with <b>right tools</b>.</p>
       </div>
     </div>
+    <div class="medium-6 columns">
+      <img src="images/@stock/girl_holding.jpg" alt="tingr">
+    </div>
   </div>
+</div>
+<div class="full no-padding black-darken-4">
+  <div class="row">
+      <div class="medium-6 columns">
+        <div class="service-info right-text white-text">
+          <h2 class="white-text">Pictures. Videos. Messages.</h2>
+          <p>IT'S FUN TO CAPTURE. <p>Automatically created <b>student memory books</b> for your classroom.</p></p>
+        </div>
+      </div>
+      <div class="medium-6 columns">
+        <img src="images/@stock/picture_girl.jpg" alt="tingr pictures">
+      </div>
+  </div>
+</div>
+
+
+<div class="full no-padding ">
+  <div class="row">
+    <div class="medium-6 columns">
+      <div class="service-info right-text">
+        <h2>Childcare attendance</h2>
+        <p>Sign-In & Sign-Out Students/Staff With Your Phone/iPad Conveniently!</p>
+        <p>Seperate PIN for pick-up/drop-off personnel for added security.</p>
+      </div>
+    </div>
+    <div class="medium-6 columns">
+      <img src="images/@stock/hourglass.jpg" alt="tingr attendance">
+    </div>
+  </div>
+</div>
+
+
+<div class="full no-padding centered-text">
+  <div class="spacing"></div>
   <div class="row">
     <div class="large-10 large-centered columns">
+      <a href="{{site.url}}/signup.html" class="button boxed blue">Try it for Free.<br/<br/>No CC/Commitment reqd.</a>
+      <div class="spacing"></div>
       <p class="big-text">
-        Right from new Student enrollments —to— all the way to their graduation, Tingr saves Preschool|Daycare|Childcare|After-school Administrators a ton of time and hassle from day-to-day administrative chores.<br/><br/>
-        Digital Forms and Organized Student records. Attendance system that works for Students and Staff. Easy communication with parents including sharing classroom updates, pictures, videos. Automatic Roster and several more...<br/>
-        <a href="{{site.url}}/signup.html" class="button boxed">comes with 6mos trial on us. No commitment or payment to try!</a>
+        Right from new Student enrollments —to— all the way to their graduation, Tingr saves Childcare providers of all sizes, a ton of time and hassle from day-to-day administrative chores.<br/><br/>
+        Digital Forms and Organized Student records. Attendance system that works for Students and Staff. Easy communication with parents including sharing classroom updates, pictures, videos. Automatic Roster and several more...
       </p>
-      <p class="bold-text">
-        Our customers say..."[ref: Tingr] Every Daycare's must have product. Easy to use. Not cluttered with unnecessary things."
-      </p>
-      <div class="two spacing"></div>
-      <a href="{{site.url}}/features.html" class="button boxed">Learn more about tingr</a>
+      <div class="spacing"></div>
+      <a href="{{site.url}}/features.html" class="button boxed black">learn more</a>
     </div>
   </div>
-</div>
-
-<div class="full light-grey flower">
-  <div class="three spacing"></div>
-  <div class="row">
-    {% for milestone in page.milestones %}
-    <div class="large-3 columns ">
-      <div class="milestone centered-text">
-        <div class="number" style="color: #333" data-from="{{milestone.from}}" data-to="{{milestone.to}}"></div>
-        <span>{{milestone.title}}</span>
-        <div class="spacing"></div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="three spacing"></div>
 </div>
 <div class="full">
   <div class="row">
@@ -203,6 +203,21 @@ clients:
       </div>
       {% endfor %}
     </div>
+  </div>
+</div>
+
+<div class="full light-grey flower">
+  <div class="three spacing"></div>
+  <div class="row">
+    {% for milestone in page.milestones %}
+    <div class="large-3 columns ">
+      <div class="milestone centered-text">
+        <div class="number" style="color: #333" data-from="{{milestone.from}}" data-to="{{milestone.to}}"></div>
+        <span>{{milestone.title}}</span>
+        <div class="spacing"></div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
 <div class="full white no-padding">
