@@ -77,6 +77,12 @@
 .full.white {
   background: #fff; }
 
+.full.landingpage {
+  background-image: url(../images/@stock/landing_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; }
+
 .full.flower {
   background-image: url(../images/@stock/family_ie.png);
   background-repeat: no-repeat;
@@ -116,6 +122,10 @@
   padding: 100px 0 200px;
   background: rgba(34, 34, 34, 0.85); }
 
+.overlay-light {
+  padding: 100px 0 200px;
+  background: rgba(127, 170, 60, 0.21); }
+
 .no-padding {
   padding: 0; }
 
@@ -137,6 +147,7 @@
 .top-shift {
   margin-bottom: -80px;
   top: -100px; }
+
 
 a {
   color: #ab8860;
@@ -387,7 +398,7 @@ body {
   margin-top: -60px;
   position: relative; }
   #menu-toggler i {
-    background: #333;
+    background: #6a1b9a;
     color: #fff;
     font-size: 32px;
     display: block;

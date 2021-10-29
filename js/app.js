@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
     $('#slides').superslides({
       animation: 'fade',
       hashchange: false,
-      play: 150000000
+      play: 0
     });
 
     $('#slides').on('animated.slides', function() {
