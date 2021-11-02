@@ -57,18 +57,7 @@
   background: #fff; }
 
 @media only screen and (max-width: 767px) {
-  .full.landingpage {
-    padding: 0px 0px 0px 0px;
-    background-size: cover;
-    background-position: 50% 50%;
-    position: relative;
-    background: #000;
-    background-image: url(../images/@stock/landing_1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: fixed auto;
-  }
+
 
   .title-area h3 {
     padding-left: 15px;
@@ -93,10 +82,15 @@
 }
 
 .full.landingpage {
-  background-image: url(../images/@stock/landing_1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed; }
+  background: url(../images/@stock/landing_1.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-attachment: scroll;
+  background-size: auto 100%;
+}
 
 .full.flower {
   background-image: url(../images/@stock/family_ie.png);
