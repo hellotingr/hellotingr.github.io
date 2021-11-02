@@ -85,6 +85,13 @@
     padding-left: 15px !important;
 }
 
+.top-bar-logo{
+  padding: 1rem !important;
+  float: left;
+  background: white !important;
+  box-shadow: 0 0 2px white;
+}
+
 .full.landingpage {
   background-image: url(../images/@stock/landing_1.jpg);
   background-repeat: no-repeat;
@@ -131,7 +138,11 @@
   background: rgba(34, 34, 34, 0.85); }
 
 .overlay-light {
-  padding: 100px 0 200px;
+  background: linear-gradient(to right, rgba(47,38,126, 1), rgba(105, 240, 174, 0));
+}
+
+.glowing {
+  box-shadow: 0 0 5px greenyellow;
 }
 
 .no-padding {
@@ -402,10 +413,9 @@ body {
 
 #menu-toggler {
   padding-right: 40px;
-  margin-top: -60px;
   position: relative; }
   #menu-toggler i {
-    background: #6a1b9a;
+    background: #2F267E;
     color: #fff;
     font-size: 32px;
     display: block;
