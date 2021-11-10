@@ -5,6 +5,18 @@ title: Collect State forms digitally. Legal. Safe. Secure.
 excerpt: "Tingr digitalized most of the state forms for you. All you need is, simply request them whenever you want. Automatically collected, organized for you. With friendly reminders, never miss another student paper work on Tingr. Potentially avoiding citations."
 keywords: Free trial Childcare Management software  Tingr  Preschool Paperwork  State Forms  Free Childcare software  Tingr for Schools  Free website for Childcare  Childcare Daycare Attendance  CDSS Forms  Spanish Daycare Forms  Afterschool  Daycare Attendance  Student Memory Books. California Licensing Forms. LIC613A, LIC995E, LIC282, LIC995A, LIC9150, LIC9166, LIC9212, LIC9224, LIC627, LIC9221, LIC700, lic701, immunization record, LIC702"
 forms:
+  - name: "Childcare Registration Form"
+    code: "Sample"
+    description: "This childcare registration form template allows capturing all the essential application information for each child in your care. You can collect child's information such as name, address, sex, hours of child care required, parents' information, emergency contact information, medical information by using this childcare registration form template."
+    url: "https://my.tingr.org/tingr_forms/General/application_form.pdf"
+  - name: "All About the Child Form"
+    code: "Sample"
+    description: "Form to capture all information about the child."
+    url: "https://my.tingr.org/tingr_forms/General/AllAboutChild copy.pdf"
+  - name: "Individual Infant Sleeping Plan"
+    code: "LIC 9227"
+    description: "Form for Infants with an Individual Infant Sleeping Plan."
+    url: "https://my.tingr.org/tingr_forms/CA/LIC9227.pdf"
   - name: "Consent for Emergency Medical Treatment"
     code: "LIC 627"
     description: "This document gives you permission by the parent to seek emergency medical or dental care for their child if needed."
@@ -90,11 +102,11 @@ forms:
             <div id="checklist-checkbox"></div>
           </div>
           <div class="checklist-column checklist-column-center">
-             <a href="{{ forms.url }}">{{ forms.name }} ({{ forms.code }})</a>
+             <a href="{{ forms.url }}" target="_blank">{{ forms.name }} ({{ forms.code }})</a>
              <div class="checklist-row-description">{{ forms.description }}</div>
           </div>
           <div class="checklist-column checklist-column-right">
-             <a id="checklist-pdf-icon" href="{{ forms.url }}" download><i class="fa fa-file-pdf-o"></i></a>
+             <a id="checklist-pdf-icon" href="{{ forms.url }}" download target="_blank"><i class="fa fa-file-pdf-o"></i></a>
           </div>
         </div>
         {% endfor %}
