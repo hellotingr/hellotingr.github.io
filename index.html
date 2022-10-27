@@ -20,20 +20,20 @@ milestones:
   to: 100
 
 testimonials_left:
-- author: <b>Lilly</b><br/><i>Peek-A-Boo Childcare Center<br/>San Francisco</i>
+- author: <b>Lilly</b>, Peek-A-Boo Childcare Center<br/>San Francisco, California
   content: Every Child Care services provider's must have product! Easy to use. Not cluttered with unnecessary things.
   avatar: images/@stock/testimonial_lilly.png
-- author: <b>Staff</b><br/><i>Matangi Family Daycare<br/>Santa Clara</i>
+- author: <b>Teacher</b>, Matangi Family Daycare<br/>Santa Clara, California
   content: Thank you for considering me for the tingr app. It has really made my life much easy.
   avatar: images/@stock/testimonial_matangi.png
 testimonials_right:
-- author: <b>Niveditha</b><br/><i>Millennial Mom<br/>California</i>
+- author: <b>Nivi</b>, Millennial Mom<br/>California
   content: When my 2yr LO started going to a near by Childcare center...I was very nervous.
     But, tingr kept me in contact with teacher directly. Since I was getting a whole lot of pictures, videos from his classroom...I was way better than I imagined.
     I open this app many many times throughout the day.
   avatar: images/@stock/testimonial_mom.jpg
 - author: ""
-  content: We would love the opportunity to have you with us. <br/><br/> <a href="contact.html" class="button boxed black">get in touch with us today</a>
+  content: <h3>Tingr is about helping Childcare Providers succeed.<br/><br/> <a href="features.html" class="button boxed black">Learn How</a><h3>
   avatar: images/@stock/testimonial-welcome.jpg
 
 clients:
@@ -49,13 +49,13 @@ clients:
         <div class="medium-6 columns ">
           <div class="title-area center-text overlay-light">
             <div class="four spacing"></div>
-            <h3 class="white">Are you a Childcare Provider struggling to manage? fill spots??</h3>
+            <h3 class="white big-text">Are you a Childcare Provider?<br/>struggling to manage?? <br/>fill spots???</h3>
             <br/>
             <h1 class="white">Meet Tingr.</h1>
             <br/>
             <h1 class="white">Boost Your Childcare Enrollments Just Like that!</h1>
             <br/>
-            <h3 class="white">Plus. Marketing that just works—Fill Your Spots Quickly—Digital Student Records—Teacher & Parent Apps. And Much more...</h3>
+            <h3 class="white">Plus. Fill Your Spots Quickly. Marketing That Just Works. Digital Student Records. Teacher & Parent Apps. And Much more...</h3>
             <div class="two spacing"></div>
 <!--             <a href="https://my.tingr.org/signup.html" class="button boxed blue glowing">
               <b><u>SIGN-UP NOW</u></b>
@@ -128,13 +128,48 @@ clients:
   </div>
 </div>
 
+<div class="full">
+  <div class="row">
+    <div class="large-6 columns">
+      {% for testimonial in page.testimonials_left %}
+      <div class="quote wow slideInLeft" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+        <div class="row">
+          <div class="small-3 columns">
+            <img src="{{testimonial.avatar}}" alt="tingr">
+          </div>
+          <div class="small-9 columns">
+            <p>{{testimonial.content}}</p>
+            <p class="author">{{testimonial.author}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="large-6 columns">
+      {% for testimonial in page.testimonials_right %}
+      <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+        <div class="row">
+          <div class="small-3 columns">
+            <img src="{{testimonial.avatar}}" alt="tingr">
+          </div>
+          <div class="small-9 columns">
+            <p>{{testimonial.content}}</p>
+            <p class="author">{{testimonial.author}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 <div class="full no-padding green-accent-2">
   <div class="one spacing"></div>
   <div class="row">
       <div class="medium-6 columns">
         <div class="service-info right-text">
           <h2>Digital Paperwork</h2>
-          <p>Gathering Student Forms & Documents, Never Been This Easy. Digitally Send and Recieve State Forms, Parent Handbooks and More -from- Your Fingertips. <br/><br/>Secure & Ready to Print Anytime You Want!</p>
+          <p>Gathering Student Paperwork, Never Been This Easy. Digitally Send and Recieve State Forms, Parent Handbooks and More -from- Your Fingertips. <br/><br/>Secure & Ready to Print Anytime You Want!</p>
           <div class="two spacing"></div>
 
           <u>Savings from Print Supplies.<br/>Savings for Mother Earth!!</u>
@@ -194,8 +229,8 @@ clients:
   <div class="row">
     <div class="medium-6 columns">
       <div class="service-info right-text">
-        <h2>...plus</h2>
-        <h3> Free Website. Ready -to- Print Facility Roster. Daily Food Menus. Parent Information Links. School Calendar. Email Software For Schools. Parent Friendly Apps. End Of Year Memory Books. Online Student Waitlist. Organized Student Paperwork. Huge Savings from Print Supplies.</h3>
+        <h2>And More...</h2>
+        <p class="big-text"> Free Website. Ready -to- Print Facility Roster. Daily Food Menus. Parent Information Links. School Calendar. Email Software For Schools. Parent Friendly Apps. End Of Year Memory Books. Online Student Waitlist. Organized Student Paperwork. Huge Savings from Print Supplies.</p>
       </div>
     </div>
     <div class="medium-6 columns">
@@ -209,7 +244,7 @@ clients:
   <div class="four spacing"></div>
   <div class="row">
     <div class="large-10 large-centered columns">
-      <a href="{{site.url}}/signup.html" class="button boxed blue">Try it for Free.<br/<br/><br/><br/>No CC/Commitment reqd.</a>
+      <a href="{{site.url}}/signup.html" class="button boxed blue">Try it Free.<br/<br/><br/><br/>No CC/Commitment reqd.</a>
       <div class="spacing"></div>
       <p class="big-text">
         Right from new Student enrollments —to— all the way to their graduation, Tingr saves Childcare providers of all sizes, a ton of time and hassle from day-to-day administrative chores.<br/><br/>
@@ -217,40 +252,6 @@ clients:
       </p>
       <div class="spacing"></div>
       <a href="{{site.url}}/features.html" class="button boxed black">learn more</a>
-    </div>
-  </div>
-</div>
-<div class="full">
-  <div class="row">
-    <div class="large-6 columns">
-      {% for testimonial in page.testimonials_left %}
-      <div class="quote wow slideInLeft" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
-        <div class="row">
-          <div class="small-3 columns">
-            <img src="{{testimonial.avatar}}" alt="tingr">
-          </div>
-          <div class="small-9 columns">
-            <p>{{testimonial.content}}</p>
-            <p class="author">{{testimonial.author}}</p>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <div class="large-6 columns">
-      {% for testimonial in page.testimonials_right %}
-      <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
-        <div class="row">
-          <div class="small-3 columns">
-            <img src="{{testimonial.avatar}}" alt="tingr">
-          </div>
-          <div class="small-9 columns">
-            <p>{{testimonial.content}}</p>
-            <p class="author">{{testimonial.author}}</p>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
     </div>
   </div>
 </div>
