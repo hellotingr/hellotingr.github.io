@@ -49,7 +49,7 @@ clients:
         <div class="medium-6 columns ">
           <div class="title-area center-text overlay-light">
             <div class="four spacing"></div>
-            <h3 class="white big-text">Dear Child Care Provider. Are you struggling to manage? fill spots quickly!?</h3>
+            <h3 class="white big-text">Hello, Child Care Provider. Are you struggling to manage your center? fill spots!?</h3>
             <br/>
             <h1 class="white">Meet Tingr.</h1>
             <br/>
@@ -61,7 +61,7 @@ clients:
               <b><u>SIGN-UP NOW</u></b>
             </a> -->
 
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hello-tingr'});return false;" class="button boxed blue glowing">
+            <a id="t_requestDemo" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hello-tingr'});return false;" class="button boxed blue glowing">
               <b><u>Request a Demo</u></b>
             </a>
             <div class="one spacing"></div>
@@ -270,3 +270,11 @@ clients:
     {% endfor %}
   </div>
 </div>
+
+<script>
+  // prompt schedule demo
+  if(!(typeof t_getQueryParameter("scheduledemo") === 'undefined')){
+    $("#t_requestDemo").click();
+  }
+
+</script>
