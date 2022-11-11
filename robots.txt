@@ -6,6 +6,7 @@ Disallow: /vendor/
 Disallow: /contact/
 Disallow: /blog/
 Disallow: /bower_components/
+Disallow: /privacypolicy
 
 User-agent: CCBot
 Disallow: /

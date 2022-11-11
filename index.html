@@ -270,3 +270,13 @@ clients:
     {% endfor %}
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    // schedule demo prompt
+    var meetParam = t_getQueryParameter("meet");
+    if(!(typeof meetParam === 'undefined') && meetParam === "y"){
+      Calendly.initPopupWidget({url: 'https://calendly.com/hello-tingr'});
+    }
+  });
+</script>
