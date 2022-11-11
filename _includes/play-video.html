@@ -21,7 +21,7 @@ $(function() {
 document.addEventListener("DOMContentLoaded", function(){
   // schedule demo prompt
   var showHappyParam = t_getQueryParameter("happycustomer");
-  if(!(typeof showHappyParam === 'undefined') && showHappyParam === "y"){
+  if(!(typeof showHappyParam === 'undefined') && showHappyParam ){
     $('#landing-video-image').click();
   }
 });
